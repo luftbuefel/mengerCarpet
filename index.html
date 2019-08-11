@@ -1,0 +1,20 @@
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <canvas id="canvas" width="800" height="800"></canvas>
+    <script type="text/javascript" src="menger.js" defer>
+    </script>
+    <script type="text/javascript" defer>
+      //encapsulated the function so there would be no name collision
+      (()=>{
+        let canvas = document.getElementById("canvas");
+      canvas.width = screen.width;
+      canvas.height = screen.height;
+    })();
+    </script>
+  </body>
+</html>
